@@ -2,7 +2,7 @@
   <div> 
       <h1> {{title}} 
           <ul>
-              <book-item v-for="book in books" :book='book'></book-item>
+              <BookItem v-for="(book, index) in books" v-bind:book='book' :key="index"></BookItem>
              
           </ul>
       </h1>
@@ -10,11 +10,11 @@
 </template>
 
 <script>
-import BookItem from './BookItem';
+
 import BookItem from './BookItem.vue';
 export default {
     name: 'BookList',
-    components: {BookItemBookItem},
+    components: {BookItem},
 data() {
     return {
         title: "All Books",

@@ -7,7 +7,7 @@
 
 <script>
 import BookList from './components/BookList';
-import Booklist from './components/Booklist.vue';
+
 
 export default {
   name: 'app',
