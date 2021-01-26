@@ -19,7 +19,7 @@ export default {
     components: {BookItem, BookForm}, 
    
     methods:{
-        AppendBook(bookTitle, bookAuthor) {
+        appendBook(bookTitle, bookAuthor) {
             this.books.push({ title: bookTitle, author: bookAuthor })
         }
     },
