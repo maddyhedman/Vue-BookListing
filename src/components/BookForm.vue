@@ -16,7 +16,7 @@ props: ['books'],
 data() {
     return {
         bookTitle: '',
-        bookAuthor: ''
+        bookAuthor: '',
     }
 },
 methods: {

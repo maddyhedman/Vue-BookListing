@@ -1,23 +1,23 @@
 <template>
   <div> 
-      <h1> {{title}} 
+      <h1> {{title}} </h1>
           <ul>
-              <BookItem v-for="(book, index) in books" v-bind:book='book' :key="index"></BookItem>
+              <BookItem v-for="book in books" :book='book' ></BookItem>
              
           </ul>
-      </h1>
+      
       <book-form @addBook='appendBook'/>
   </div>
 </template>
 
 <script>
 import BookForm from './BookForm';
-import BookItem from './BookItem.vue';
+import BookItem from './BookItem';
 
 export default {
-    name: 'BookList',
-    components: {BookItem},
-    components: {BookForm},
+   
+    components: {BookItem, BookForm}, 
+   
     methods:{
         AppendBook(bookTitle, bookAuthor) {
             this.books.push({ title: bookTitle, author: bookAuthor })
