@@ -6,7 +6,7 @@
              
           </ul>
       </h1>
-      <book-form>@addBook='appendBook'</book-form>
+      <book-form @addBook='appendBook'/>
   </div>
 </template>
 
