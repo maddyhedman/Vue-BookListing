@@ -6,15 +6,18 @@
              
           </ul>
       </h1>
+      <book-form>@addBook='appendBook'</book-form>
   </div>
 </template>
 
 <script>
-
+import BookForm from './BookForm';
+import BookItem from './BookItem.vue';
 import BookItem from './BookItem.vue';
 export default {
     name: 'BookList',
     components: {BookItem},
+    components: {BookForm},
 data() {
     return {
         title: "All Books",
