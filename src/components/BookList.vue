@@ -13,11 +13,16 @@
 <script>
 import BookForm from './BookForm';
 import BookItem from './BookItem.vue';
-import BookItem from './BookItem.vue';
+
 export default {
     name: 'BookList',
     components: {BookItem},
     components: {BookForm},
+    methods:{
+        AppendBook(bookTitle, bookAuthor) {
+            this.books.push({ title: bookTitle, author: bookAuthor })
+        }
+    }
 data() {
     return {
         title: "All Books",
